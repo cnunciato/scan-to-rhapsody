@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D35DCB1D1564040A00DEADAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB1C1564040A00DEADAD /* UIKit.framework */; };
+		D35DCB1F1564040A00DEADAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB1E1564040A00DEADAD /* Foundation.framework */; };
+		D35DCB211564040A00DEADAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB201564040A00DEADAD /* CoreGraphics.framework */; };
+		D35DCB271564040A00DEADAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB251564040A00DEADAD /* InfoPlist.strings */; };
+		D35DCB291564040A00DEADAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DCB281564040A00DEADAD /* main.m */; };
+		D35DCB2D1564040A00DEADAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DCB2C1564040A00DEADAD /* AppDelegate.m */; };
+		D35DCB301564040A00DEADAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DCB2F1564040A00DEADAD /* ViewController.m */; };
+		D35DCB571564043900DEADAD /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB511564043900DEADAD /* libzbar.a */; };
+		D35DCB581564043900DEADAD /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB531564043900DEADAD /* zbar-back.png */; };
+		D35DCB591564043900DEADAD /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB541564043900DEADAD /* zbar-help.html */; };
+		D35DCB5A1564043900DEADAD /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB551564043900DEADAD /* zbar-helpicons.png */; };
+		D35DCB5B1564043900DEADAD /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB561564043900DEADAD /* zbar-samples.png */; };
+		D35DCB5D1564045100DEADAD /* hi-res-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB5C1564045100DEADAD /* hi-res-logo.png */; };
+		D35DCB661564052B00DEADAD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB651564052B00DEADAD /* QuartzCore.framework */; };
+		D35DCB681564053700DEADAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB671564053700DEADAD /* CoreMedia.framework */; };
+		D35DCB6A1564054300DEADAD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB691564054300DEADAD /* CoreVideo.framework */; };
+		D35DCB6C1564054E00DEADAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB6B1564054E00DEADAD /* AVFoundation.framework */; };
+		D35DCB6E1564056200DEADAD /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCB6D1564056200DEADAD /* libiconv.dylib */; };
+		D35DCB6F1564066500DEADAD /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DCB611564050100DEADAD /* AppModel.m */; };
+		D35DCB701564067400DEADAD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DCB631564050100DEADAD /* LoginViewController.m */; };
+		D35DCB711564067F00DEADAD /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DCB5F1564050100DEADAD /* Album.m */; };
+		D35DCB721564069500DEADAD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB641564050100DEADAD /* LoginViewController.xib */; };
+		D35DCB741564078F00DEADAD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35DCB731564078F00DEADAD /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D35DCB181564040A00DEADAD /* ScanToRhapsody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanToRhapsody.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35DCB1C1564040A00DEADAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D35DCB1E1564040A00DEADAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D35DCB201564040A00DEADAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D35DCB241564040A00DEADAD /* ScanToRhapsody-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScanToRhapsody-Info.plist"; sourceTree = "<group>"; };
+		D35DCB261564040A00DEADAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D35DCB281564040A00DEADAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D35DCB2A1564040A00DEADAD /* ScanToRhapsody-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScanToRhapsody-Prefix.pch"; sourceTree = "<group>"; };
+		D35DCB2B1564040A00DEADAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D35DCB2C1564040A00DEADAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D35DCB2E1564040A00DEADAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D35DCB2F1564040A00DEADAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D35DCB3D1564043900DEADAD /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		D35DCB3E1564043900DEADAD /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		D35DCB3F1564043900DEADAD /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		D35DCB401564043900DEADAD /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		D35DCB411564043900DEADAD /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		D35DCB421564043900DEADAD /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		D35DCB431564043900DEADAD /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		D35DCB441564043900DEADAD /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		D35DCB451564043900DEADAD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		D35DCB461564043900DEADAD /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		D35DCB471564043900DEADAD /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		D35DCB481564043900DEADAD /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		D35DCB491564043900DEADAD /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		D35DCB4A1564043900DEADAD /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		D35DCB4B1564043900DEADAD /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		D35DCB4C1564043900DEADAD /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		D35DCB4D1564043900DEADAD /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		D35DCB4E1564043900DEADAD /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		D35DCB4F1564043900DEADAD /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		D35DCB501564043900DEADAD /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		D35DCB511564043900DEADAD /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		D35DCB531564043900DEADAD /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		D35DCB541564043900DEADAD /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		D35DCB551564043900DEADAD /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		D35DCB561564043900DEADAD /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		D35DCB5C1564045100DEADAD /* hi-res-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hi-res-logo.png"; sourceTree = "<group>"; };
+		D35DCB5E1564050100DEADAD /* Album.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		D35DCB5F1564050100DEADAD /* Album.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		D35DCB601564050100DEADAD /* AppModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
+		D35DCB611564050100DEADAD /* AppModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		D35DCB621564050100DEADAD /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D35DCB631564050100DEADAD /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D35DCB641564050100DEADAD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D35DCB651564052B00DEADAD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D35DCB671564053700DEADAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D35DCB691564054300DEADAD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D35DCB6B1564054E00DEADAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D35DCB6D1564056200DEADAD /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		D35DCB731564078F00DEADAD /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D35DCB151564040A00DEADAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35DCB1D1564040A00DEADAD /* UIKit.framework in Frameworks */,
+				D35DCB1F1564040A00DEADAD /* Foundation.framework in Frameworks */,
+				D35DCB211564040A00DEADAD /* CoreGraphics.framework in Frameworks */,
+				D35DCB661564052B00DEADAD /* QuartzCore.framework in Frameworks */,
+				D35DCB681564053700DEADAD /* CoreMedia.framework in Frameworks */,
+				D35DCB6A1564054300DEADAD /* CoreVideo.framework in Frameworks */,
+				D35DCB6C1564054E00DEADAD /* AVFoundation.framework in Frameworks */,
+				D35DCB6E1564056200DEADAD /* libiconv.dylib in Frameworks */,
+				D35DCB571564043900DEADAD /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D35DCB0D1564040A00DEADAD = {
+			isa = PBXGroup;
+			children = (
+				D35DCB391564043900DEADAD /* ZBarSDK */,
+				D35DCB221564040A00DEADAD /* ScanToRhapsody */,
+				D35DCB1B1564040A00DEADAD /* Frameworks */,
+				D35DCB191564040A00DEADAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D35DCB191564040A00DEADAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB181564040A00DEADAD /* ScanToRhapsody.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35DCB1B1564040A00DEADAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB6D1564056200DEADAD /* libiconv.dylib */,
+				D35DCB6B1564054E00DEADAD /* AVFoundation.framework */,
+				D35DCB691564054300DEADAD /* CoreVideo.framework */,
+				D35DCB671564053700DEADAD /* CoreMedia.framework */,
+				D35DCB651564052B00DEADAD /* QuartzCore.framework */,
+				D35DCB1C1564040A00DEADAD /* UIKit.framework */,
+				D35DCB1E1564040A00DEADAD /* Foundation.framework */,
+				D35DCB201564040A00DEADAD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35DCB221564040A00DEADAD /* ScanToRhapsody */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB5E1564050100DEADAD /* Album.h */,
+				D35DCB5F1564050100DEADAD /* Album.m */,
+				D35DCB601564050100DEADAD /* AppModel.h */,
+				D35DCB611564050100DEADAD /* AppModel.m */,
+				D35DCB621564050100DEADAD /* LoginViewController.h */,
+				D35DCB631564050100DEADAD /* LoginViewController.m */,
+				D35DCB641564050100DEADAD /* LoginViewController.xib */,
+				D35DCB2B1564040A00DEADAD /* AppDelegate.h */,
+				D35DCB2C1564040A00DEADAD /* AppDelegate.m */,
+				D35DCB2E1564040A00DEADAD /* ViewController.h */,
+				D35DCB2F1564040A00DEADAD /* ViewController.m */,
+				D35DCB731564078F00DEADAD /* ViewController.xib */,
+				D35DCB231564040A00DEADAD /* Supporting Files */,
+			);
+			path = ScanToRhapsody;
+			sourceTree = "<group>";
+		};
+		D35DCB231564040A00DEADAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB5C1564045100DEADAD /* hi-res-logo.png */,
+				D35DCB241564040A00DEADAD /* ScanToRhapsody-Info.plist */,
+				D35DCB251564040A00DEADAD /* InfoPlist.strings */,
+				D35DCB281564040A00DEADAD /* main.m */,
+				D35DCB2A1564040A00DEADAD /* ScanToRhapsody-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D35DCB391564043900DEADAD /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB3A1564043900DEADAD /* Headers */,
+				D35DCB511564043900DEADAD /* libzbar.a */,
+				D35DCB521564043900DEADAD /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		D35DCB3A1564043900DEADAD /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB3B1564043900DEADAD /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D35DCB3B1564043900DEADAD /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB3C1564043900DEADAD /* zbar */,
+				D35DCB461564043900DEADAD /* zbar.h */,
+				D35DCB471564043900DEADAD /* ZBarCameraSimulator.h */,
+				D35DCB481564043900DEADAD /* ZBarCaptureReader.h */,
+				D35DCB491564043900DEADAD /* ZBarHelpController.h */,
+				D35DCB4A1564043900DEADAD /* ZBarImage.h */,
+				D35DCB4B1564043900DEADAD /* ZBarImageScanner.h */,
+				D35DCB4C1564043900DEADAD /* ZBarReaderController.h */,
+				D35DCB4D1564043900DEADAD /* ZBarReaderView.h */,
+				D35DCB4E1564043900DEADAD /* ZBarReaderViewController.h */,
+				D35DCB4F1564043900DEADAD /* ZBarSDK.h */,
+				D35DCB501564043900DEADAD /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		D35DCB3C1564043900DEADAD /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB3D1564043900DEADAD /* Decoder.h */,
+				D35DCB3E1564043900DEADAD /* Exception.h */,
+				D35DCB3F1564043900DEADAD /* Image.h */,
+				D35DCB401564043900DEADAD /* ImageScanner.h */,
+				D35DCB411564043900DEADAD /* Processor.h */,
+				D35DCB421564043900DEADAD /* Scanner.h */,
+				D35DCB431564043900DEADAD /* Symbol.h */,
+				D35DCB441564043900DEADAD /* Video.h */,
+				D35DCB451564043900DEADAD /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		D35DCB521564043900DEADAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCB531564043900DEADAD /* zbar-back.png */,
+				D35DCB541564043900DEADAD /* zbar-help.html */,
+				D35DCB551564043900DEADAD /* zbar-helpicons.png */,
+				D35DCB561564043900DEADAD /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D35DCB171564040A00DEADAD /* ScanToRhapsody */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35DCB361564040A00DEADAD /* Build configuration list for PBXNativeTarget "ScanToRhapsody" */;
+			buildPhases = (
+				D35DCB141564040A00DEADAD /* Sources */,
+				D35DCB151564040A00DEADAD /* Frameworks */,
+				D35DCB161564040A00DEADAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanToRhapsody;
+			productName = ScanToRhapsody;
+			productReference = D35DCB181564040A00DEADAD /* ScanToRhapsody.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D35DCB0F1564040A00DEADAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D35DCB121564040A00DEADAD /* Build configuration list for PBXProject "ScanToRhapsody" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D35DCB0D1564040A00DEADAD;
+			productRefGroup = D35DCB191564040A00DEADAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D35DCB171564040A00DEADAD /* ScanToRhapsody */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D35DCB161564040A00DEADAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35DCB271564040A00DEADAD /* InfoPlist.strings in Resources */,
+				D35DCB581564043900DEADAD /* zbar-back.png in Resources */,
+				D35DCB591564043900DEADAD /* zbar-help.html in Resources */,
+				D35DCB5A1564043900DEADAD /* zbar-helpicons.png in Resources */,
+				D35DCB5B1564043900DEADAD /* zbar-samples.png in Resources */,
+				D35DCB721564069500DEADAD /* LoginViewController.xib in Resources */,
+				D35DCB5D1564045100DEADAD /* hi-res-logo.png in Resources */,
+				D35DCB741564078F00DEADAD /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35DCB141564040A00DEADAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35DCB291564040A00DEADAD /* main.m in Sources */,
+				D35DCB2D1564040A00DEADAD /* AppDelegate.m in Sources */,
+				D35DCB301564040A00DEADAD /* ViewController.m in Sources */,
+				D35DCB6F1564066500DEADAD /* AppModel.m in Sources */,
+				D35DCB701564067400DEADAD /* LoginViewController.m in Sources */,
+				D35DCB711564067F00DEADAD /* Album.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D35DCB251564040A00DEADAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35DCB261564040A00DEADAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D35DCB341564040A00DEADAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D35DCB351564040A00DEADAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D35DCB371564040A00DEADAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScanToRhapsody/ScanToRhapsody-Prefix.pch";
+				INFOPLIST_FILE = "ScanToRhapsody/ScanToRhapsody-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D35DCB381564040A00DEADAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScanToRhapsody/ScanToRhapsody-Prefix.pch";
+				INFOPLIST_FILE = "ScanToRhapsody/ScanToRhapsody-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D35DCB121564040A00DEADAD /* Build configuration list for PBXProject "ScanToRhapsody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35DCB341564040A00DEADAD /* Debug */,
+				D35DCB351564040A00DEADAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D35DCB361564040A00DEADAD /* Build configuration list for PBXNativeTarget "ScanToRhapsody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35DCB371564040A00DEADAD /* Debug */,
+				D35DCB381564040A00DEADAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D35DCB0F1564040A00DEADAD /* Project object */;
+}
